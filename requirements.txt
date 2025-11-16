@@ -1,0 +1,106 @@
+# ============================================================================
+# Dépendances pour le Driver SA32
+# ============================================================================
+# Installation: pip install -r requirements.txt
+#
+# Auteur: Équipe SOLINOV
+# Date: 2025-11-16
+# Python: 3.7+
+# ============================================================================
+
+# ===========================
+# DÉPENDANCES PRINCIPALES
+# ===========================
+
+# PyModbus - Bibliothèque Modbus pour Python
+# Support Modbus TCP et RTU
+pymodbus>=3.0.0,<4.0.0
+
+# ===========================
+# DÉPENDANCES OPTIONNELLES
+# ===========================
+
+# Tests et Qualité de Code
+# ------------------------
+pytest>=7.0.0              # Framework de tests unitaires
+pytest-cov>=3.0.0          # Couverture de code pour pytest
+pytest-timeout>=2.1.0      # Timeout pour les tests
+pytest-mock>=3.10.0        # Mocking pour pytest
+
+# Linting et Type Checking
+# ------------------------
+pylint>=2.15.0             # Analyseur de code statique
+mypy>=0.990                # Vérification de types statiques
+black>=22.10.0             # Formateur de code Python
+flake8>=5.0.0              # Vérificateur de style PEP8
+isort>=5.10.0              # Tri des imports
+
+# Documentation
+# -------------
+sphinx>=5.0.0              # Générateur de documentation
+sphinx-rtd-theme>=1.0.0    # Thème Read The Docs pour Sphinx
+sphinx-autodoc-typehints>=1.19.0  # Support des type hints dans la doc
+
+# ===========================
+# INTÉGRATION PyQt5
+# ===========================
+# Décommenter si vous utilisez PyQt5 pour l'interface graphique
+# PyQt5>=5.15.0
+# PyQt5-sip>=12.11.0
+
+# ===========================
+# UTILITAIRES
+# ===========================
+
+# Logging avancé
+# --------------
+colorlog>=6.7.0            # Logs colorés pour meilleure lisibilité
+
+# Sérialisation de données
+# -------------------------
+# Décommenter si nécessaire pour votre application
+# pandas>=1.5.0            # Analyse et manipulation de données
+# numpy>=1.23.0            # Calculs numériques
+# matplotlib>=3.6.0        # Visualisation de données
+
+# ===========================
+# DÉVELOPPEMENT
+# ===========================
+
+# Outils de développement
+# -----------------------
+ipython>=8.0.0             # Shell Python interactif amélioré
+jupyter>=1.0.0             # Notebooks interactifs
+
+# Pre-commit hooks
+# ----------------
+pre-commit>=2.20.0         # Framework pour pre-commit hooks
+
+# ===========================
+# NOTES D'INSTALLATION
+# ===========================
+#
+# Installation minimale (driver seulement):
+#   pip install pymodbus>=3.0.0
+#
+# Installation complète (driver + développement):
+#   pip install -r requirements.txt
+#
+# Installation pour production:
+#   pip install pymodbus>=3.0.0 colorlog>=6.7.0
+#
+# Installation pour tests:
+#   pip install pymodbus>=3.0.0 pytest>=7.0.0 pytest-cov>=3.0.0
+#
+# ===========================
+# COMPATIBILITÉ
+# ===========================
+#
+# Python: 3.7, 3.8, 3.9, 3.10, 3.11
+# OS: Windows, Linux, macOS
+#
+# Testé avec:
+#   - Python 3.10.0
+#   - pymodbus 3.5.2
+#   - pytest 7.4.3
+#
